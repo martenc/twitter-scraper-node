@@ -1,0 +1,26 @@
+{
+  "name": "drake-tweet-scraper",
+  "subdomain": "drake-tweet-scraper",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martenc/twitter-scraper-node.git"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*",
+    "stylus": "*",
+    "passport": "~0.2.0",
+    "passport-facebook": "~1.0.2",
+    "passport-twitter": "~1.0.2",
+    "mongoose": "~3.8.7",
+    "twit": "~1.1.12",
+    "socket.io": "~0.9.16"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
