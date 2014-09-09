@@ -82,7 +82,7 @@ var T = new Twit({
 //Socket.io
 var io = require('socket.io').listen(server);
 //var stream = T.stream('statuses/sample')
-var stream = T.stream('statuses/filter', { track: '#drake', language: 'en' })
+var stream = T.stream('statuses/filter', { track: '#drakethetype', language: 'en' })
 
 stream.on('tweet', function (tweet) {
   console.log('tweet captured via tweet');
