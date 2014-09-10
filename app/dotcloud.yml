@@ -4,4 +4,4 @@ www:
     processes:
         app: node app.js
     config:
-        node_version: v0.10.x
+        node_version: v0.8.x
