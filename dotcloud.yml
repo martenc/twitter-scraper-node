@@ -1,2 +1,7 @@
 www:
-  type: node
+    type: nodejs
+    approot: /
+    processes:
+        app: node app.js
+    config:
+    	node_version: v0.10.x
