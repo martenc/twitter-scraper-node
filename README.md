@@ -10,7 +10,7 @@ We need Node, npm, bower and MongoDB for this to work. Then in the project direc
 
 Setup Mongo (e.g. mongolabs or locally) 
 
-Create your twitter app and create your own oath.js file, then configure your keys as shown below (all facebook stuff has been excluded or commented out)
+Create your twitter app and create your own oath.js and database.js file, then configure your keys as shown below (all facebook stuff has been excluded or commented out)
 
 # Twitter stream
 
@@ -34,3 +34,9 @@ var ids = {
 }
 
 module.exports = ids
+
+
+# database.js for connecting to mongodb
+module.exports = {
+    'url' : 'mongodb://<user>:<pass>@mongo.onmodulus.net:27017/Mikha4ot' 
+};
