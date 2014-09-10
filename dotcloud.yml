@@ -1,6 +1,6 @@
 www:
     type: nodejs
-    approot: /
+    approot: .
     processes:
         app: node app.js
     config:
