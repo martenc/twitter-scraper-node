@@ -10,11 +10,11 @@ We need Node, npm, bower and MongoDB for this to work. Then in the project direc
 
 Setup Mongo (e.g. mongolabs or locally) 
 
-Create your twitter app and create your own oath.js and database.js file, then configure your keys as shown below (all facebook stuff has been excluded or commented out)
+Create your twitter app and create your own oath.js and database.js file, then configure your keys as shown below (all facebook stuff has been excluded or commented out). Make sure you update the callback url in your oath.js file if/when you go live.
 
 # Twitter stream
 
-If you go to http://localhost:3000/fight you will get the Twitter stream
+If you go to http://localhost:3000/drake you will get the Twitter stream
 
 # Oauth.js for Facebook and Twitter
 
