@@ -15,6 +15,8 @@ var fs = require('fs')
 var Twit = require('twit')
 var config = require('./oauth.js')
 
+var tweetData = require('./tweetdata.js');
+
 var app = express();
 
 // all environments
@@ -85,7 +87,8 @@ var io = require('socket.io').listen(server);
 var stream = T.stream('statuses/filter', { track: '#drake', language: 'en' })
 
 stream.on('tweet', function (tweet) {
-  console.log('tweet captured via tweet');
+  tweetData.save(tweet);
+  console.log('tweet captured via twit and saved');
 })
 
 

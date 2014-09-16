@@ -1,7 +1,7 @@
 {
   "name": "drake-tweet-scraper",
   "subdomain": "drake-tweet-scraper",
-  "version": "0.0.1",
+  "version": "0.0.1-3",
   "scripts": {
     "start": "node server.js"
   },

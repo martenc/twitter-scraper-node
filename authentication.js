@@ -23,7 +23,8 @@ module.exports = passport.use(new TwitterStrategy({
 
       if (!err && user != null) {
         done(null, user);
-      } else {
+      } 
+      else {
         var user = new User({
           oauthID: profile.id,
           name: profile.displayName,
@@ -53,7 +54,8 @@ module.exports = passport.use(new TwitterStrategy({
 
       if (!err && user != null) {
         done(null, user);
-      } else {
+      } 
+      else {
         console.dir(profile);
         var user = new User({
           oauthID: profile.id,

@@ -2,9 +2,9 @@ var mongoose = require('mongoose');
 
 // create a user model
 var Tweet = mongoose.model('Tweet', {
-  oauthID: Number,
-  name: String,
+  //twitterhandle: String,
+  tweet: String,
   created: Date
 });
 
-module.exports = User;
+module.exports = Tweet;
