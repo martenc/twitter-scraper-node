@@ -1,6 +1,3 @@
-[ ![Codeship Status for martenc/twitter-scraper-node](https://www.codeship.io/projects/21da69d0-1a8d-0132-bf86-4a07366ee29d/status)](https://www.codeship.io/projects/34703)
-
-
 # Installation
 
 We need Node, npm, bower and MongoDB for this to work. Then in the project directory:
