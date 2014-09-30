@@ -9,7 +9,16 @@ var Tweets = require('./tweet.js')
 exports.save = function(tweetData) {
     var tweet = new Tweets({
       //twitterhandle: tweetData.text,
+      twitterId: tweetData.id,
+      twitterIdStr: tweetData.id_str,
       tweet: tweetData.text,
+      source: tweetData.source,
+      name: tweetData.user.name,
+      screen_name: tweetData.user.screen_name,
+      retweet_count: tweetData.retweet_count,
+      entities: tweetData.entities,
+      favorited: tweetData.favorited,
+      retweeted: tweetData.retweeted,
       created: Date.now()
     });
     tweet.save(function(err) {
